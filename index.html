@@ -1,4 +1,15 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>斯巴克地圖 | 產品靈感－設計語彙地圖 · 廖瑞堂版權所有</title><style>
+<!doctype html><html lang="zh-Hant"><head><style id="sparkGateStyle">
+html:not(.spark-unlocked) body > :not(#sparkGate){visibility:hidden!important}
+#sparkGate{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:#15171b;color:#e9ebef;font-family:system-ui,'Noto Sans TC',sans-serif;padding:20px}
+html.spark-unlocked #sparkGate{display:none}
+#sparkGate .gate-card{width:min(380px,100%);padding:36px 30px;border-radius:16px;background:#202329;border:1px solid #383e48;box-shadow:0 20px 70px #0006;text-align:center}
+#sparkGate h2{font-size:24px;margin:0 0 8px;letter-spacing:.04em}
+#sparkGate p{color:#aab2c0;font-size:13px;margin:0 0 24px}
+#sparkGate input{display:block;width:100%;padding:13px 15px;border:1px solid #505969;background:#14161b;color:#fff;border-radius:9px;font-size:16px;outline:none}
+#sparkGate input:focus{border-color:#80b9ff}
+#sparkGate button{display:block;width:100%;padding:12px;margin-top:14px;border:0;border-radius:9px;background:#83b8ef;color:#101820;font-weight:700;font-size:15px;cursor:pointer}
+#sparkGate .gate-error{min-height:22px;margin:12px 0 0;color:#ff9999;font-size:13px}
+</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>斯巴克地圖 | 產品靈感－設計語彙地圖 · 廖瑞堂版權所有</title><style>
 :root{font-family:system-ui,'Noto Sans TC',sans-serif;color:#e9ebef;background:#15171b}*{box-sizing:border-box}body{margin:0}button,select,input{font:inherit}button,.upload{background:#343943;color:#eef0f3;border:1px solid #535b66;border-radius:8px;padding:9px 12px;cursor:pointer}button:hover,.upload:hover{background:#48515f}button:disabled{opacity:.45;cursor:not-allowed}.upload input{display:none}button.primary{background:#d69b52;border-color:#d69b52;color:#1c1b19;font-weight:700}button.primary:hover{background:#e9af67}.app{display:grid;grid-template-columns:285px minmax(0,1fr) 265px;min-height:100vh}.sidebar{background:#22262c;padding:18px 16px;border-right:1px solid #363c45;display:flex;flex-direction:column;gap:13px}.sidebar.right{border-right:0;border-left:1px solid #363c45}h1{font-size:20px;margin:0;letter-spacing:.4px}h2{font-size:13px;color:#c9d1dc;margin:8px 0 0}p,.hint{font-size:12px;color:#aeb6c1;line-height:1.6;margin:0}.tag{font-size:11px;color:#e2b881}.field{display:flex;flex-direction:column;gap:5px;font-size:12px;color:#c7ced8}.field select,.field input[type=number],.field input[type=range]{width:100%}.field select,.field input[type=number]{background:#15191e;color:white;border:1px solid #505866;border-radius:7px;padding:8px}.line{display:flex;gap:7px;align-items:center}.line>*{min-width:0;flex:1}.divider{border-top:1px solid #3c424b;margin:3px 0}.work{min-width:0;display:flex;flex-direction:column;background:#111318}.top{padding:13px 18px;border-bottom:1px solid #333944;display:flex;gap:9px;align-items:center;flex-wrap:wrap}.top .spacer{flex:1}.stage{position:relative;flex:1;min-height:400px;overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:28px 20px 55px;background:radial-gradient(circle at center,#252a32,#15171b 75%)}canvas{display:block;background:white;max-width:none;height:auto;flex:none;box-shadow:0 12px 45px #0009;touch-action:none;cursor:default}.status{padding:11px 17px;border-top:1px solid #333944;font-size:12px;color:#b6bec9}.layout-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.layout-grid button{padding:10px 5px;font-size:12px;min-height:52px}.masonry-slot{position:relative;min-width:0}.masonry-slot>[data-layout]{width:100%;height:100%;padding-bottom:25px}.masonry-width{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);min-height:0!important;height:21px;padding:1px 7px!important;white-space:nowrap;font-size:10px!important;background:#1d2229;border:1px solid #66707b;border-radius:5px;z-index:2}.masonry-width:hover{background:#465363}.layout-grid button.active{border-color:#e4a85f;background:#584733;color:#ffe4bf}.mini{font-size:11px}.selected-name{word-break:break-all;color:#f3d09d;font-size:12px;min-height:35px}.stat{font-size:12px;color:#aeb6c1}.kbd{font-family:monospace;border:1px solid #626973;padding:1px 4px;border-radius:4px}.bottom{margin-top:auto}@media(max-width:1000px){.app{grid-template-columns:230px minmax(0,1fr)}.right{grid-column:1/-1;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.right>*{min-width:0}}@media(max-width:640px){.app{display:flex;flex-direction:column}.sidebar{gap:9px}.right{display:flex!important}.stage{min-height:450px;padding:14px}.top{padding:9px}}
 
 .zoom-tools{position:absolute;right:13px;top:11px;z-index:5;display:flex;align-items:center;gap:3px;padding:4px;background:#242a32e8;border:1px solid #505763;border-radius:9px;box-shadow:0 2px 12px #0005}
@@ -987,7 +998,7 @@ html,body{height:100%;overflow:hidden}
 #axisPanel #axisLengthNumber::-webkit-inner-spin-button,#axisPanel #axisLengthNumber::-webkit-outer-spin-button{display:none!important;appearance:none!important}
 #axisPanel .axis-length-unit{margin-left:-4px!important;margin-right:1px!important}
 #axisPanel #axisArrows{flex:0 0 65px!important;width:65px!important;max-width:65px!important}
-/* Student v2.8: title checkbox in the existing compact 04 toolbar */
+/* Student v3.2: title checkbox in the existing compact 04 toolbar */
 #axisPanel .axis-top-controls>.axis-title-toggle{display:flex;align-items:center;gap:3px;white-space:nowrap;font-size:var(--ui-item)!important}
 #axisPanel .axis-top-controls>.axis-title-toggle input{width:12px;height:12px;margin:0;accent-color:#76b4ff}
 #axisPanel:not(.axis-active) .axis-top-controls>.axis-title-toggle{display:none!important}
@@ -3407,6 +3418,25 @@ document.addEventListener('keydown',e=>{if(!studentAxisActive)return;if(['Escape
  updatePaperInfo();
 })();
 
+</script><div id="sparkGate" role="dialog" aria-modal="true" aria-label="SPARK MAP 學生版登入">
+<form class="gate-card" id="sparkGateForm" autocomplete="off"><h2>SPARK MAP</h2><p>Student v3.3｜課堂專用工具</p><input id="sparkGatePassword" type="text" inputmode="text" placeholder="請輸入課堂密碼" aria-label="課堂密碼" required autofocus><button type="submit">進入 SPARK MAP</button><div class="gate-error" id="sparkGateError" role="alert"></div></form>
+</div>
+<script id="sparkGateScript">
+(()=>{
+const expected='dd2d38adf2708b8176ea5c12bc5fb6430702fdd74fec38b0507c43d6893a6e76';
+const form=document.getElementById('sparkGateForm');
+const input=document.getElementById('sparkGatePassword');
+const error=document.getElementById('sparkGateError');
+form.addEventListener('submit',async e=>{
+ e.preventDefault();error.textContent='';
+ try{
+  const bytes=new TextEncoder().encode(input.value.normalize('NFC'));
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),x=>x.toString(16).padStart(2,'0')).join('');
+  if(hash===expected){document.documentElement.classList.add('spark-unlocked');input.value='';}
+  else{error.textContent='密碼不正確，請重新輸入。';input.select();}
+ }catch(err){error.textContent='無法驗證密碼，請使用 HTTPS 或更新瀏覽器。';}
+});
+})();
 </script></body></html>
 
 <style>/* v0.88: optimized vector icon at native 20 CSS pixels */.sidebar.right #bgEyedropper .pdf-dropper-icon{width:20px!important;height:20px!important;display:block!important;flex:none;overflow:visible;opacity:1!important}
